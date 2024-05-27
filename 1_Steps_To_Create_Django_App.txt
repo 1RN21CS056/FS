@@ -15,7 +15,10 @@ Step 5---> Creating an App---->
 
 Step 6----> Go to settings.py under myproject where in installed apps AT LAST INCLUDE 'myapp',
 
-Step 7----> go to views.py under myapp then start writing the code 
+Step 7----> go to views.py under myapp then start writing the code
+
+Step 8----->To start the development server run the command 
+		python .\manage.py runserver
 
 
 
