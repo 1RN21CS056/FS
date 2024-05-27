@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRUIT STUDENT DJANGO APP</title>
+</head>
+<body>
+    <h1>Fruit List</h1>
+    <ul>
+        {% for i in fruitList %}
+            <li>{{i}}</li>
+        {% endfor %}    
+    </ul>
+    <h1>Student List</h1>
+    <ol>
+        {% for i in StudentList %}
+            <li>{{i}}</li>
+        {% endfor %}  
+    </ol>
+
+</body>
+</html>
