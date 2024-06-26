@@ -1,0 +1,32 @@
+python manage.py makemigrations
+python manage.py migrate
+
+
+c1=Course.objects.create(course_code='21CS61', course_name='SE', course_credits=3)
+
+c2=Course.objects.create(course_code='21CS62', course_name='FS', course_credits=3)
+
+c3=Course.objects.create(course_code='21CS63', course_name='CG', course_credits=3)
+
+c4=Course.objects.create(course_code='21CS64', course_name='DSV', course_credits=3)
+
+
+
+s1=Student.objects.create(student_usn='1RN21CS035', student_name='Avinash', student_sem=6)
+
+s2=Student.objects.create(student_usn='1RN21CS049', student_name='Dhanush', student_sem=6)
+
+s3=Student.objects.create(student_usn='1RN21CS053', student_name='Dilip', student_sem=6)
+
+s4=Student.objects.create(student_usn='1RN21CS056', student_name='Eshwar', student_sem=6)
+
+s5=Student.objects.create(student_usn='1RN21CS062', student_name='Harsh', student_sem=6)
+
+//Enrolment
+
+s1.enrolment.add(c1, c2)
+s2.enrolment.add(c2, c3, c4)
+s3.enrolment.add(c1, c4)
+s4.enrolment.add(c1, c2, c4)
+
+exit() // need to exit from console
