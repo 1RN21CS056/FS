@@ -1,0 +1,8 @@
+//Creating Superusers
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'user'): Admin 
+Email address: admin@gmail.com
+Password:admin2003 
+Password (again):admin2003
