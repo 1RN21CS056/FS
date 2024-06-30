@@ -22,7 +22,7 @@ Step 8----->To start the development server run the command
 			python .\manage.py runserver   if ur Django app is outside the project folder 
             		
 			else u can run the command 
-            		python manage.py runserver
+            		  python manage.py runserver
 
 
 
