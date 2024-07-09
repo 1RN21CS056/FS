@@ -17,4 +17,3 @@ def hours_offset_increase(request, offset):
 
 def hours_offset_decrease(request, offset):
     return HttpResponse("Before "+str(offset)+"hours the time was"+str(datetime.datetime.now()-datetime.timedelta(hours = offset)))
-1
