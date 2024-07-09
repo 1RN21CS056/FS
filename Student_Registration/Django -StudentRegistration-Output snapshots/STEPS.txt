@@ -1,6 +1,7 @@
 python manage.py makemigrations
 python manage.py migrate
 
+python manage.py shell
 
 c1=Course.objects.create(course_code='21CS61', course_name='SE', course_credits=3)
 
