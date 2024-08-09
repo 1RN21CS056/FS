@@ -1,5 +1,5 @@
 This django app completes 7 lab programs, namely:<br>
-| Sl. No. | Program |
+| Sl No | Program |
 |-----:|---------------|
 |     7|    Student, Courses, Course Registration with ManyToManyField  |
 |     8|     Admin Interfaces|
