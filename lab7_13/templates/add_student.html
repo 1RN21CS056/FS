@@ -14,9 +14,6 @@ $('#f').on('submit', function(e){
     type: 'POST',
     url: '/add_student/', 
     data: formData,
-    success: function(response){
-        alert("success!");
-    }
-    })
-})
+    success: (x)=>alert("success!")
+    })})
 </script>

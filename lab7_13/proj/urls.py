@@ -24,4 +24,6 @@ urlpatterns = [
     path('add_project/',add_project),
     path('add_student/',add_student),
     path('search/',search),
+    path('csv/',get_csv),
+    path('pdf/',get_pdf),
 ]
