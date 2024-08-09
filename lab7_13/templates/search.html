@@ -1,0 +1,21 @@
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<h1>Search Student</h1>
+<form id='f' action="" method="post">
+{% csrf_token %}
+<input type="text" name="usn">
+<input type="submit" value="submit"></form>
+<div id="result"></div>
+<script>
+$('#f').on('submit', function(e){
+    e.preventDefault();
+    var formData = $(this).serialize();
+    $.ajax({
+    type: 'GET',
+    url: '/search/', 
+    data: formData,
+    success: function(res){
+        $("#result").html("Student:"+res['name']+"<br>USN: "+res['usn']+"<br>Courses:"+res['courses'])
+    }
+    })
+})
+</script>
